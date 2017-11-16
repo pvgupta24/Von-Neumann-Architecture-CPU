@@ -9,9 +9,14 @@
 > The program can be loaded in the RAM module and the following code carries out the instructions accordingly. 
 
 ### Functionalities   
-> This processor allows supported instructions (as given in the Instruction Set file) ![Instruction Set](Instruc_Set.png) to be written in the RAM module.
+> This processor allows supported instructions (as given in the Instruction Set file) to be written in the RAM module.
+
+![Instruction Set](Instruc_Set.png)
+
 > An Instruction cycle is broken into 3 phases - Fetch , Decode and Execute
+
 > Instructions from RAM Module are fetched into the Instruction Register on the appropriate phase, it is decoded by the control unit which sets various flags and select lines depending on the type of instruction, like 
+
 > * fetching into immediate register
 > * writing in register file
 > * changing PC value
@@ -36,14 +41,17 @@
 * Sample instructions are already present. Overwrite it if needed.
 
 * Enable Simulation.
-  
-  In terminal,
 
-  Compile the file as (Without `)
+  Compile the file as
+
         ` iverilog VerilogBM-210-235.v Verilog-210-235.v -o Verilog-210-235.vvp `
-  Run the vvp file as (Without `)
+
+  Run the vvp file as
+  
         ` vvp Verilog-210-235.vvp ` 
-  Open the output wave as(Without `)
+
+  Open the output wave as
+  
         ` gtkwave VerilogBM-210-235.vcd `
 
 Corresponding changes can be seen in the wave as per instructions.
